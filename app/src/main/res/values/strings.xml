@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">A1L1</string>
     <string name="Weather">Погода</string>
-    <string name="temperature">Теппература +11</string>
-    <string name="humidity">Влажность 64 %</string>
-    <string name="windy">Скорость ветра 4 м/с</string>
+    <string name="temperature"/>
+    <string name="humidity"/>
+    <string name="windy"/>
     <string name="teperatureCheckbox">Teperature</string>
     <string name="humidityCheckbox">Humidity</string>
     <string name="windycheckbox">Windy</string>
