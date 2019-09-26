@@ -1,7 +1,13 @@
 *.iml
 .gradle
+/app
 /local.properties
 /.idea/caches
+/.idea/codeStyles
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/runConfigurations.xml
+/.idea/vcs.xml
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
