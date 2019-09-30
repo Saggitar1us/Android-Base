@@ -3,7 +3,6 @@ package com.geekbrains.a1l1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,7 +15,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
         Intent data = getIntent();
-        String text = getIntent().getExtras().getString(String.valueOf(TEXT));
+        String text = data.getExtras().getString(String.valueOf(TEXT));
         TextView textView = (TextView) findViewById(R.id.textCitySecond);
         textView.setText(text);
 

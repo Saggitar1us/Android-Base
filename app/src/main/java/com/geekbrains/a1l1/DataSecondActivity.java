@@ -2,20 +2,16 @@ package com.geekbrains.a1l1;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import static org.xmlpull.v1.XmlPullParser.TEXT;
 
-public class StartSecondActivity implements View.OnClickListener {
+public class DataSecondActivity implements View.OnClickListener {
     private Activity sourceActivity;
 
-    public StartSecondActivity(Activity sourceActivity) {
+    public DataSecondActivity(Activity sourceActivity) {
         this.sourceActivity = sourceActivity;
     }
 
