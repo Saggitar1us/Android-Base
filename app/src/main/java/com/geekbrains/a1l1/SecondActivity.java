@@ -3,11 +3,7 @@ package com.geekbrains.a1l1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import static org.xmlpull.v1.XmlPullParser.TEXT;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -16,8 +12,8 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
         Intent data = getIntent();
-        String text = getIntent().getExtras().getString(String.valueOf(TEXT));
-        TextView textView = (TextView) findViewById(R.id.textCitySecond);
+        String text = data.getExtras().getString("City");
+        TextView textView = findViewById(R.id.textCitySecond);
         textView.setText(text);
 
         if (data.getBooleanExtra("checkboxTemp", true)) {
@@ -32,12 +28,10 @@ public class SecondActivity extends AppCompatActivity {
             TextView textWindy = findViewById(R.id.textViewWindy);
             textWindy.setText("Скорость ветра 5 м/с");
         }
-        Toast.makeText(getApplicationContext(), "Second - onCreate()", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Toast.makeText(getApplicationContext(), "Second - onStart()", Toast.LENGTH_SHORT).show();
     }
 }

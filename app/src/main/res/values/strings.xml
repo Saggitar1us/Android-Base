@@ -4,7 +4,7 @@
     <string name="temperature"/>
     <string name="humidity"/>
     <string name="windy"/>
-    <string name="teperatureCheckbox">Teperature</string>
+    <string name="teperatureCheckbox">Temperature</string>
     <string name="humidityCheckbox">Humidity</string>
     <string name="windycheckbox">Windy</string>
     <string name="city">Город</string>
