@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cloud"
     android:orientation="vertical"
     tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/textCitySecond"
+        style="@style/MyTextAppearance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/citynamesecondact"
         android:layout_gravity="center_vertical|bottom"
+        android:text="@string/citynamesecondact"
         android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textTemp"
@@ -23,21 +25,22 @@
         android:layout_gravity="center_vertical|bottom"
         android:text="@string/temperature"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/textHumidity"/>
+        app:layout_constraintBottom_toTopOf="@+id/textHumidity" />
 
     <TextView
         android:id="@+id/textHumidity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom"
         android:text="@string/humidity"
-        android:textSize="22sp"
-        android:layout_gravity="center_vertical|bottom"/>
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/textViewWindy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom"
         android:text="@string/windy"
-        android:textSize="22sp"
-        android:layout_gravity="center_vertical|bottom"/>
+        android:textSize="22sp" />
+
 </LinearLayout>
