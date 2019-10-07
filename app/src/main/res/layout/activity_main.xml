@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cloud"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
+        style="@style/MyTextAppearance"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
@@ -19,10 +21,11 @@
         android:id="@+id/cities"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="-40dp"/>
+        android:layout_marginBottom="-40dp" />
 
     <CheckBox
         android:id="@+id/checkTemp"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|bottom"
@@ -45,13 +48,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|left"
+        android:layout_marginBottom="100dp"
         android:text="@string/windycheckbox"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/button"
+        style="@style/PrimaryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|top"
-        android:text="@string/buttonok" />
+        android:background="@color/colorPrimary"
+        android:text="@string/buttonok"
+        android:textAppearance="@style/MyTextAppearance" />
+    
 </LinearLayout>
