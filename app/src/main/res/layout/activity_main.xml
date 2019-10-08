@@ -14,8 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
         android:layout_marginBottom="10dp"
-        android:text="Выбор страны:"
+        android:text="@string/ChooseCountry"
         android:textSize="22sp" />
+
 
     <Spinner
         android:id="@+id/cities"
@@ -39,7 +40,7 @@
         android:id="@+id/checkHumidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|left"
+        android:layout_gravity="center_horizontal|start"
         android:text="@string/humidityCheckbox"
         android:textSize="24sp" />
 
@@ -47,7 +48,7 @@
         android:id="@+id/checkWindy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|left"
+        android:layout_gravity="center_horizontal|start"
         android:layout_marginBottom="100dp"
         android:text="@string/windycheckbox"
         android:textSize="24sp" />
@@ -61,5 +62,5 @@
         android:background="@color/colorPrimary"
         android:text="@string/buttonok"
         android:textAppearance="@style/MyTextAppearance" />
-    
+
 </LinearLayout>

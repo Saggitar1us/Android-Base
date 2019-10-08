@@ -12,6 +12,10 @@
     <string name="buttonok">OK</string>
     <string name="City" />
     <string name="citynamesecondact" />
+    <string name="itemWindy">Скорость ветра 5 м/с</string>
+    <string name="itemHumidity">Влажность воздуха 67 %</string>
+    <string name="itemTemperature">Температура +13</string>
+    <string name="ChooseCountry">Выбор страны:</string>
 
     <style name="MyTextAppearance" parent="TextAppearance.AppCompat">
         <item name="android:textColor">#A12D2E2D</item>

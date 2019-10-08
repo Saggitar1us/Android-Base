@@ -17,17 +17,29 @@ public class SecondActivity extends AppCompatActivity {
         textView.setText(text);
 
         if (data.getBooleanExtra("checkboxTemp", true)) {
-            TextView textTemp = findViewById(R.id.textTemp);
-            textTemp.setText("Температура +13");
+            getTemperature();
         }
         if (data.getBooleanExtra("checkboxHum", true)) {
-            TextView textHum = findViewById(R.id.textHumidity);
-            textHum.setText("Влажность воздуха 67 %");
+            getHumidity();
         }
         if (data.getBooleanExtra("checkboxWindy", true)) {
-            TextView textWindy = findViewById(R.id.textViewWindy);
-            textWindy.setText("Скорость ветра 5 м/с");
+            getWindy();
         }
+    }
+
+    private void getWindy() {
+        TextView textWindy = findViewById(R.id.textViewWindy);
+        textWindy.setText(R.string.itemWindy);
+    }
+
+    private void getHumidity() {
+        TextView textHum = findViewById(R.id.textHumidity);
+        textHum.setText(R.string.itemHumidity);
+    }
+
+    private void getTemperature() {
+        TextView textTemp = findViewById(R.id.textTemp);
+        textTemp.setText(R.string.itemTemperature);
     }
 
     @Override

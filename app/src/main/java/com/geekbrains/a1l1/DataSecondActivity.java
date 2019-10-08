@@ -10,7 +10,7 @@ public class DataSecondActivity implements View.OnClickListener {
 
     private Activity sourceActivity;
 
-    public DataSecondActivity(Activity sourceActivity) {
+    DataSecondActivity(Activity sourceActivity) {
         this.sourceActivity = sourceActivity;
     }
 

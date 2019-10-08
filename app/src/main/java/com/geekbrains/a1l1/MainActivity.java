@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         AdapterView.OnItemSelectedListener itemSelectedListener = new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String city = (String) parent.getItemAtPosition(position);
             }
 
             @Override
